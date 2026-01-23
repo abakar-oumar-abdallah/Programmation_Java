@@ -26,4 +26,8 @@ définies.
 Les paramètres d'une fonction sont les noms listés dans la définition de la fonction. Les arguments d'une fonction
 sont les valeurs réelles passées à la fonction. Les paramètres sont initialisés avec les valeurs des arguments fournis.
 
+Arguments positionnels :
+
+En Java, l'initialisation des paramètres se fait forcément dans le même ordre que celui des arguments.
+
  */
