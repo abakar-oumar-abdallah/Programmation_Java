@@ -11,8 +11,15 @@ public class Fruit {
     }
 
     // La surchage de constructeur pour un nouvel objet
-    public Fruit(String nom) {
+    public Fruit(String nom, String origine) {
         this.nom = nom;
+        this.origine = origine;
+    }
+
+    // Les méthodes
+    public boolean estTchadien() {
+        if(this.origine.equals("Tchad")) return true;
+        return false;
     }
 
 }

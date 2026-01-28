@@ -5,13 +5,18 @@ public class Main {
         Fruit fruit2 = new Fruit("Pomme", "Vert", "Cameroun");
         System.out.println("Fruit : " + fruit.nom);
         System.out.println("Origine : " + fruit.origine);
+        System.out.println("Origine : " + fruit.estTchadien()); // Appliation de la méthode estTchadien
         System.out.println("Fruit : " + fruit2.nom);
         System.out.println("Fruit : " + fruit2.origine);
+        System.out.println("Origine : " + fruit2.estTchadien()); // Appliation de la méthode estTchadien
 
         // L'objet avec surchage de constructeur
-        Fruit fruit3 = new Fruit("Orange");
+        Fruit fruit3 = new Fruit("Orange", "Nigéria");
         System.out.println("Fruit : " + fruit3.nom);
-        System.out.println("Origine : Sans origine");
+        System.out.println("Origine : " + fruit3.origine);
+
+        // Application de la méthode sur l'objet
+        System.out.println("Origine : " + fruit3.estTchadien());
 
     }
 }
