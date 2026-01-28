@@ -49,4 +49,12 @@ Le mot-clé this :
 
 Dans le bloc d'instructions du constructeur précédent, on voit l'utilisation du mot-clé this.
 Il s'agit en fait de l'objet qui sera instancié à l'utilisation du new.
+
+Les méthodes :
+
+Les méthodes sont des fonctions particulières appliquables directement aux objets.
+
+Utilisation des méthodes :
+
+L'intérêt des méthodes, c'est qu'elles permettent de définir des fonctions qui ont accès aux attributs des objets que l'on a instancié.
  */
