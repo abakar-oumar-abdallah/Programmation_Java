@@ -67,5 +67,32 @@ Les méthodes sont des fonctions particulières appliquables directement aux obj
 
 Utilisation des méthodes :
 
-L'intérêt des méthodes, c'est qu'elles permettent de définir des fonctions qui ont accès aux attributs des objets que l'on a instancié.
+L'intérêt des méthodes, c'est qu'elles permettent de définir des fonctions qui ont accès aux attributs
+des objets que l'on a instancié.
+
+Les accesseurs :
+
+Le principe d'encapsulation :
+
+En programmation, l’encapsulation désigne le regroupement de données avec un ensemble de routines
+qui en permettent la lecture et la manipulation. En pratique, on va gérer l'encapsulation des données
+en utilisant les accesseurs dans du code Java.
+
+Les accesseurs sont des méthodes tout à fait normales. Leur rôle se limite à la lecture ou à la modification
+des attributs d'un objet.
+
+Cela implique également que l'on travaillera uniquement avec des attributs private par la suite pour s'assurer
+que l'accès aux attributs des objets se fera toujours de la manière prévue par le développeur.
+
+Les getters :
+
+Les getters sont des accesseurs de lecture.
+
+Les setters :
+
+Les setters sont des accesseurs d'écriture.
+
+Attention : Définir des setters dans une classe rend les objets créés par la suite mutables. Autant que possible,
+il est conseillé de ne pas rendre les objets mutables pour éviter des bugs liés aux modifications
+(un objet peut être référencé à différents endroits du code et donc il peut être modifié à différents endroits également).
  */

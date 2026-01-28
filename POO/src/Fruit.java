@@ -1,8 +1,8 @@
 public class Fruit {
 
-    public String nom;
-    public String couleur;
-    public String origine;
+    private String nom;
+    private String couleur;
+    private String origine;
 
     public Fruit(String nom, String couleur, String origine) {
         this.nom = nom;
