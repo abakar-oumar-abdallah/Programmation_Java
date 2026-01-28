@@ -10,4 +10,9 @@ public class Fruit {
         this.origine = origine;
     }
 
+    // La surchage de constructeur pour un nouvel objet
+    public Fruit(String nom) {
+        this.nom = nom;
+    }
+
 }

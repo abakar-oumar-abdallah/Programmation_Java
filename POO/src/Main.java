@@ -2,9 +2,16 @@ public class Main {
     public static void main(String[] args) {
 
         Fruit fruit = new Fruit("Faise", "Rouge", "Tchad");
-        Fruit fuit2 = new Fruit("Pomme", "Vert", "Cameroun");
-        System.out.println("Fruit : " + fruit.nom );
-        System.out.println("Fruit : " + fuit2.nom);
+        Fruit fruit2 = new Fruit("Pomme", "Vert", "Cameroun");
+        System.out.println("Fruit : " + fruit.nom);
+        System.out.println("Origine : " + fruit.origine);
+        System.out.println("Fruit : " + fruit2.nom);
+        System.out.println("Fruit : " + fruit2.origine);
+
+        // L'objet avec surchage de constructeur
+        Fruit fruit3 = new Fruit("Orange");
+        System.out.println("Fruit : " + fruit3.nom);
+        System.out.println("Origine : Sans origine");
 
     }
 }
