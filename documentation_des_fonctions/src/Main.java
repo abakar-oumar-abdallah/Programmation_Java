@@ -3,6 +3,13 @@ public class Main {
     public static void main(String[] args) {
         var resultat = multiplication(5,3);
         System.out.println("La multiplication nous donne : " + resultat);
+
+        // Ajout du boucle
+        while (resultat < 200) {
+            resultat = resultat + 10;
+
+            System.out.println("Le nouveau résultat est : " + resultat);
+        }
     }
 
     // Documenter la fonction en utilisant javadoc
@@ -15,13 +22,12 @@ public class Main {
     public static int multiplication(int entier1, int entier2) {
         return entier1 * entier2;
     }
-
 }
 
 /*
 La javadoc :
 
-Il est possible de créer de la documentation pour du code Java. On utilise pour cela la javadoc.
+Il est possible de créer de la documentation pour du code Java. On utilise pour cela la javadoc.
 
 Pour les fonctions, la javadoc permet de décrire :
 
@@ -30,7 +36,7 @@ les paramètres d’entrée
 le retour de la fonction s’il y en a un
 
 Pour documenter une fonction, on utilise une syntaxe très proche des commentaires multi-lignes,
-comme le montre l’exemple ci-dessus.
+comme le montre l’exemple ci-dessus. /** ... (étoite & slash) pour fermer.
 
 Quelle utilité ?
 
