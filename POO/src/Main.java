@@ -1,8 +1,10 @@
 public class Main {
     public static void main(String[] args) {
 
-        Fruit fruit = new Fruit();
-        Fruit fuit2 = new Fruit();
+        Fruit fruit = new Fruit("Faise", "Rouge", "Tchad");
+        Fruit fuit2 = new Fruit("Pomme", "Vert", "Cameroun");
+        System.out.println("Fruit : " + fruit.nom );
+        System.out.println("Fruit : " + fuit2.nom);
 
     }
 }
