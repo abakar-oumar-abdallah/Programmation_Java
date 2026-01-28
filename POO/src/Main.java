@@ -30,4 +30,18 @@ Le nom d'une classe doit respecter la convention de nommage du PascalCase
 Les objets :
 
 Pour rappel, un objet représente une instance d'une classe.
+
+Les attributs (ou propriétés) :
+
+Pour rappel, il est possible de définir des attributs dans les classes afin de représenter
+des concepts plus complexes que les types natifs.
+
+Les constructeurs :
+
+Les constructeurs sont des fonctions particulières qui permettent de créer des objets grâce au mot-clé new.
+
+Le mot-clé this :
+
+Dans le bloc d'instructions du constructeur précédent, on voit l'utilisation du mot-clé this.
+Il s'agit en fait de l'objet qui sera instancié à l'utilisation du new.
  */
