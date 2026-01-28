@@ -2,6 +2,8 @@ public class Main {
     public static void main(String[] args) {
 
         Fruit fruit = new Fruit("Faise", "Rouge", "Tchad");
+
+        /*
         Fruit fruit2 = new Fruit("Pomme", "Vert", "Cameroun");
         System.out.println("Fruit : " + fruit.nom);
         System.out.println("Origine : " + fruit.origine);
@@ -10,13 +12,22 @@ public class Main {
         System.out.println("Fruit : " + fruit2.origine);
         System.out.println("Origine : " + fruit2.estTchadien()); // Appliation de la méthode estTchadien
 
-        // L'objet avec surchage de constructeur
+        - L'objet avec surchage de constructeur
         Fruit fruit3 = new Fruit("Orange", "Nigéria");
         System.out.println("Fruit : " + fruit3.nom);
         System.out.println("Origine : " + fruit3.origine);
 
-        // Application de la méthode sur l'objet
+        - Application de la méthode sur l'objet
         System.out.println("Origine : " + fruit3.estTchadien());
+         */
+
+        // L'utilisation des accesseurs
+        System.out.println("Avant de setter notre est fruit est : " + fruit.getNom());
+
+        // Chanement du nom du fruit
+        fruit.setNom("Pomme");
+        System.out.print("Après avoir setté le fruit : " + fruit.getNom());
+
 
     }
 }
