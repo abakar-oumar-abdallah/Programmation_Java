@@ -26,13 +26,33 @@ public class Fruit {
 
     // Les accesseurs
 
+
     public String getNom() {
         return nom;
+    }
+
+    public String getCouleur() {
+        return couleur;
+    }
+
+    public String getOrigine() {
+        return origine;
     }
 
     public void setNom(String nom) {
         this.nom = nom;
     }
 
+    public void setCouleur(String couleur) {
+        this.couleur = couleur;
+    }
+
+    public void setOrigine(String origine) {
+        this.origine = origine;
+    }
+
+    public String descriptionFruit() {
+        return "Vient de la classe parente. Nom : " + nom;
+    }
 
 }

@@ -28,6 +28,8 @@ public class Main {
         fruit.setNom("Pomme");
         System.out.print("Après avoir setté le fruit : " + fruit.getNom());
 
+        Banane banane = new Banane("RCA");
+        System.out.println(banane.descriptionFruit());
 
     }
 }
@@ -95,4 +97,48 @@ Les setters sont des accesseurs d'écriture.
 Attention : Définir des setters dans une classe rend les objets créés par la suite mutables. Autant que possible,
 il est conseillé de ne pas rendre les objets mutables pour éviter des bugs liés aux modifications
 (un objet peut être référencé à différents endroits du code et donc il peut être modifié à différents endroits également).
+
+L'héritage :
+
+L'héritage permet de créer des classes "enfants" d'autres classes afin d'hériter automatiquement de leurs comportements.
+
+Grâce à l'héritage, les objets d'une classe fille ont accès aux données et aux méthodes de la classe parente et peuvent les étendre.
+
+Note : l'héritage multiple n'existe pas en Java, ce qui signifie qu'une classe ne peut pas hériter de plusieurs classes
+parentes, mais d'une seule.
+
+Le mot-clé extends permet d'hériter de la classe Fruit.
+
+Le constructeur parent est appelé en utilisant l'invocation super(...).
+
+Il est possible de surcharger le comportement d'une méthode de la classe parente en utilisant l'annotation @Override.
+Les annotations sont une notation particulière en Java qui peuvent être appliquées sur des classes ou des attributs
+ou des méthodes. Nous verrons en détails leur fonctionnement dans un prochain chapitre.
+
+N'importe quelle méthode de la classe parente peut être appelée en utilisant l'invocation super.nomDeLaMethode(...).
+Limitation : Il n'est pas possible d'utiliser un attribut private ou une méthode private de la classe parente dans la classe fille.
+
+Classes final :
+
+Les classes final ne peuvent pas être héritées. Ainsi, le code suivant ne compilera pas :
+
+public class StringCustom extends String { }
+En effet, String est une classe final. Il n'est donc pas possible de l'étendre
+
+Classes abstract :
+
+Les classes abstract permettent de définir des classes qui ne peuvent pas créer d'objets. Le but est de créer une classe
+avec des données et des comportements par défaut qui pourront ensuite être héritées par des classes filles.
+
+Méthodes abstract :
+
+Dans les classes abstract, il est possible de définir des méthodes abstract. Ce sont des méthodes qui n'ont pas de bloc
+d'instructions mais qui doivent obligatoirement être surchargées par les classes filles.
+
+On peut définit une méthode abstract ainsi :
+
+public abstract class Fruit {
+    ...
+    public abstract String abstractMethod();
+}
  */
