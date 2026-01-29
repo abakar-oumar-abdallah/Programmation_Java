@@ -1,6 +1,5 @@
 public class Voiture implements Motorise {
-    @Override
-    public void pleinEssence() {}
+
 }
 
 /*
