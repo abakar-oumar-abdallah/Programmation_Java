@@ -30,3 +30,10 @@ public class Main {
         }
     }
 }
+
+/*
+En Java, un tableau est une structure de données contenant un groupe d'éléments tous du même type, avec des adresses
+consécutives dans la mémoire. Un tableau a un nombre fixe d'éléments et il est impossible de changer sa taille.
+
+Il est possible de lire, écrire et itérer sur un tableau
+ */
