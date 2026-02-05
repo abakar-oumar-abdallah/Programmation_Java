@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,6 +11,10 @@ public class Main {
         departements.put(1, "Ain");
         departements.put(2, "Aisne");
         departements.put(3, "Allier");
+
+        for (Map.Entry departement : departements.entrySet()) {
+            System.out.println("clé: " + departement.getKey() + " | valeur: " + departement.getValue());
+        }
 
         System.out.println(departements);
 
