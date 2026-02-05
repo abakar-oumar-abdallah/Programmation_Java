@@ -38,4 +38,17 @@ Les Map sont des collections qui fonctionnent par clé / valeur. Chaque enregist
 Ces types de collections sont très puissants, car ils permettent de relier des valeurs à des index et de rendre l'accès aux données plus performant.
 
 Important : Les Map requièrent deux types différents dans l'opérateur diamant<>. Ils sont nécessaires pour typer les clés et les valeurs de la collection.
+
+TreeMap : Implémentation de SortedMap
+Le tri des TreeMap est défini de la manière suivante (similaire à TreeSet):
+
+var departements = new TreeMap<Integer, String>(new Comparator<Integer>() {
+    @Override
+    public int compare(Integer o1, Integer o2) {
+        return o1 - o2;
+    }
+});
+
+On peut définir l'ordre de tri des objets en utilisant un Comparator (ici directement en classe anonyme pour se faciliter la définition).
+La méthode compare est très similaire à compareTo de Comparable.
  */
